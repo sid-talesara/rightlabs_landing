@@ -1,0 +1,68 @@
+.header {
+  height: 100vh;
+  background-color: $color-primary;
+  position: relative;
+  &__box {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    width: 100%;
+    &--heading {
+      position: relative;
+      h1 {
+        color: $color-white;
+        font-family: Unbounded, sans-serif;
+        font-size: 4.2rem;
+        text-align: center;
+        line-height: 140%;
+      }
+
+      &--arrow {
+        position: absolute;
+        top: -100%;
+        left: 15%;
+        &--contain {
+          position: relative;
+          img {
+            width: 60%;
+          }
+          span {
+            position: absolute;
+            width: 100%;
+            font-size: 2rem;
+            color: $color-white;
+            font-weight: 400;
+          }
+        }
+      }
+      &--star {
+        position: absolute;
+        top: -20%;
+        right: 5%;
+        z-index: -1;
+        img {
+          width: 50%;
+        }
+      }
+      &--underline {
+        position: absolute;
+        right: 20%;
+        img {
+          width: 65%;
+        }
+      }
+    }
+
+    h3 {
+      margin: 0 auto;
+      width: 50%;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 2rem;
+      color: $color-white;
+      font-weight: 300;
+      line-height: 140%;
+    }
+  }
+}

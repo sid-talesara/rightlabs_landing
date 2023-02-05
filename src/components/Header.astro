@@ -1,12 +1,32 @@
 ---
+// Images used in the header
+import arrow from "../../public/assets/images/arrow.png";
+import star from "../../public/assets/images/star.png";
+import underline from "../../public/assets/images/line.png";
 ---
 
-<header class="h-screen bg-blue relative">
-  <div
-    class="w-5/6 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 text-white"
-  >
-    <h1 class="capitalize text-5xl font-grifter text-center leading-normal">
-      Creative Design & Development agency <br /> for better products
-    </h1>
+<header class="header">
+  <div class="header__box">
+    <div class="header__box--heading">
+      <h1>
+        Creative Design & Development agency <br /> for better products
+      </h1>
+      <div class="header__box--heading--arrow">
+        <div class="header__box--heading--arrow--contain">
+          <img src={arrow} alt="icon-image" />
+          <span>yes we are 😉</span>
+        </div>
+      </div>
+      <div class="header__box--heading--star">
+        <img src={star} alt="icon-star" />
+      </div>
+      <div class="header__box--heading--underline">
+        <img src={underline} alt="icon-underline" />
+      </div>
+    </div>
+    <h3>
+      Welcome to Rightlabs, a premier creative design and development agency
+      where innovation meets expertise.
+    </h3>
   </div>
 </header>

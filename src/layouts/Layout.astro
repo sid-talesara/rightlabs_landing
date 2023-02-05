@@ -1,8 +1,7 @@
 ---
 const { title } = Astro.props;
+import "../styles/style.scss";
 ---
-
-<script src="../../node_modules/flowbite/dist/flowbite.js"></script>
 
 <html lang="en">
   <head>
@@ -16,22 +15,3 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
-
-<style is:global>
-  @font-face {
-    font-family: grifter;
-    src: url("../assets/fonts/grifterbold.otf") format("opentype");
-  }
-  @font-face {
-    font-family: gilroy;
-    src: url("../assets/fonts/Gilroy-Regular.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: gilroy-med;
-    src: url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: gilroy-bold;
-    src: url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
-  }
-</style>
