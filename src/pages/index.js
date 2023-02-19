@@ -1,10 +1,13 @@
 import Nav from "@/components/Nav";
 import Header from "@/containers/homepage/Header";
+import Services from "@/containers/homepage/Services";
 
 import Head from "next/head";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [sideNav, setSideNav] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, document.body.scrollHeight);
     window.scrollTo(0, 0);
@@ -24,9 +27,12 @@ export default function Home() {
 
       <main>
         <div className="nav__wrap">
-          <Nav />
+          <Nav sideNav={sideNav} setSideNav={setSideNav} />
         </div>
-        <Header />
+        <Header setSideNav={setSideNav} />
+        <div className="services__wrapper">
+          <Services />
+        </div>
       </main>
     </>
   );

@@ -18,3 +18,12 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# next.js
+/.next/
+/out/
+
+
+# misc
+.DS_Store
+*.pem

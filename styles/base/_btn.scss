@@ -1,0 +1,27 @@
+.btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--nav--pri {
+  background-color: $color-primary;
+  padding: 1.5rem 3rem;
+  border-radius: 20rem;
+  font-size: 2rem;
+  color: $color-white_1;
+}
+
+.btn--pri {
+  background-color: $color-sec;
+  padding: 1.5rem 2.5rem;
+  border-radius: 20rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn--pri--body {
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+}

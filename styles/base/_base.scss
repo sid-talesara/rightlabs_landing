@@ -52,8 +52,17 @@ html {
   }
 }
 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+}
+
 body {
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
+}
+
+section {
+  padding: 8rem 0;
 }
