@@ -12,9 +12,9 @@ const Nav = ({ sideNav, setSideNav }) => {
       <div className="nav__menu">
         <ul className="nav__menu--menuList">
           <li className="nav--cta">Connect With Us</li>
-          <li className="hamburger" onClick={() => setSideNav(true)}>
+          {/* <li className="hamburger" onClick={() => setSideNav(true)}>
             <Image src={hamburger} alt="hamburger-icon" />
-          </li>
+          </li> */}
         </ul>
 
         {/* Side menu in navigation */}

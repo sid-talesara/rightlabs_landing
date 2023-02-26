@@ -78,4 +78,9 @@
       font-weight: 400;
     }
   }
+
+  @include respond(phone) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

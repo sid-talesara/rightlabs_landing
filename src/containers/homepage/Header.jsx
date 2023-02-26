@@ -54,9 +54,9 @@ const Header = ({ setSideNav }) => {
           Welcome to Rightlabs, a premier creative design and development agency
           where innovation meets expertise.
         </h3> */}
-        <div className="btnWrapper">
+        <a className="btnWrapper" href="#work">
           <button className="btn btn--pri">See our Work</button>
-        </div>
+        </a>
       </div>
 
       <div className="header__projectGallery">

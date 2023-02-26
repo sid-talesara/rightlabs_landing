@@ -12,9 +12,9 @@ const ServicesCard = ({ service }) => {
       <div className="description">
         <p>{service.description}</p>
       </div>
-      <div className="btnWrapper">
-        <button className="btn btn--pri btn--pri--body">Connect Now</button>
-      </div>
+      <a className="btnWrapper" href="#work">
+        <button className="btn btn--pri btn--pri--body">Our Works</button>
+      </a>
     </div>
   );
 };

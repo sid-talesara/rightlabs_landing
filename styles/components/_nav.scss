@@ -31,7 +31,7 @@
     &--menuList {
       display: flex;
       list-style: none;
-      aign-items: center;
+
       li {
         font-size: 1.8rem;
         cursor: pointer;
@@ -41,7 +41,7 @@
           border-radius: 20rem;
           padding: 1rem 2rem;
           font-weight: 500;
-          margin-right: 3.5rem;
+          // margin-right: 3.5rem;
         }
 
         &:nth-of-type(2) {

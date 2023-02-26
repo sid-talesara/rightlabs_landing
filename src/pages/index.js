@@ -37,7 +37,7 @@ export default function Home() {
         <div className="services__wrapper">
           <Services />
         </div>
-        <div className="work__wrapper">
+        <div className="work__wrapper" id="work">
           <Work />
         </div>
         <div className="testimonial__wrapper">
