@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="logo">
           <h3>Rightlabs</h3>
           <p className="subheading">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
+            Crafting Innovative Solutions for a Digital World
           </p>
         </div>
 
