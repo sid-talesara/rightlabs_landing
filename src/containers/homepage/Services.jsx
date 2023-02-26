@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import services from "../../data/services.js";
 
-import underline from "../../../public/assets/images/sec_underline.svg";
+import underline from "../../../public/assets/images/sec_underLine.svg";
 import ServicesCard from "@/components/ServicesCard";
 
 const Services = () => {

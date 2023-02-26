@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import work from "../../data/work.js";
 
-import underline from "../../../public/assets/images/sec_underline.svg";
+import underline from "../../../public/assets/images/sec_underLine.svg";
 
 const Work = () => {
   return (
