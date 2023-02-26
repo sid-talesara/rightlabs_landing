@@ -1,0 +1,44 @@
+.workCard {
+  color: $color-white_1;
+  width: calc(100% / 3.2);
+  background-color: $color-blue-2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 0.5rem;
+
+  &__top {
+    padding: 2rem;
+    .tag {
+      color: $color-sec;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      margin: 1.5rem 0;
+    }
+
+    .desp {
+      font-size: 1.4rem;
+      line-height: 130%;
+      color: #687f9a;
+    }
+  }
+
+  &__pic {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @include respond(phone-med) {
+    width: 100%;
+  }
+}

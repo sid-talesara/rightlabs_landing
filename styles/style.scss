@@ -4,6 +4,13 @@
 @import "./base/btn";
 
 @import "./components/nav";
+@import "./components/servicesCard";
+@import "./components/workCard";
+@import "./components/testimonialCard";
+@import "./components/footer";
 
 @import "./containers/homepage/header";
 @import "./containers/homepage/services";
+@import "./containers/homepage/work";
+@import "./containers/homepage/testimonial";
+@import "./containers/homepage/cta";

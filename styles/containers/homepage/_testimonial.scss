@@ -1,0 +1,33 @@
+.testimonial {
+  &__wrapper {
+    background-color: $color-white_2;
+  }
+
+  &__heading {
+    h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.4rem;
+      line-height: 140%;
+      font-family: Unbounded, sans-serif;
+      text-transform: capitalize;
+
+      span {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}

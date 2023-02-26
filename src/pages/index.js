@@ -1,6 +1,10 @@
 import Nav from "@/components/Nav";
 import Header from "@/containers/homepage/Header";
 import Services from "@/containers/homepage/Services";
+import Work from "../containers/homepage/Work";
+import Testimonial from "@/containers/homepage/Testimonial";
+import Cta from "@/containers/homepage/Cta";
+import Footer from "../components/Footer";
 
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -32,6 +36,16 @@ export default function Home() {
         <Header setSideNav={setSideNav} />
         <div className="services__wrapper">
           <Services />
+        </div>
+        <div className="work__wrapper">
+          <Work />
+        </div>
+        <div className="testimonial__wrapper">
+          <Testimonial />
+        </div>
+        <Cta />
+        <div className="footer__wrapper">
+          <Footer />
         </div>
       </main>
     </>

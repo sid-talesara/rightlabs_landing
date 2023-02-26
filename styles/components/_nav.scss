@@ -126,11 +126,15 @@
     color: $color-primary;
     padding: 1rem 0;
     &__menu {
+      &--menuList {
+        display: flex;
+        align-items: center;
+      }
       .nav--cta {
         border: 2px solid $color-primary;
       }
       .hamburger {
-        height: 3rem;
+        height: 4rem;
 
         img {
           filter: invert(26%) sepia(74%) saturate(1517%) hue-rotate(191deg)

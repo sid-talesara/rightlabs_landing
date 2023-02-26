@@ -1,17 +1,17 @@
+import WorkCard from "@/components/WorkCard";
 import Image from "next/image";
 
-import services from "../../data/services.js";
+import work from "../../data/work.js";
 
 import underline from "../../../public/assets/images/sec_underline.svg";
-import ServicesCard from "@/components/ServicesCard";
 
-const Services = () => {
+const Work = () => {
   return (
-    <section className="services row">
-      <div className="services__top">
-        <div className="services__top--heading">
+    <section className="row">
+      <div className="services__top work__top">
+        <div className="services__top--heading work__top--heading">
           <h2>
-            Our Services
+            Our Work
             <span className="underline">
               <Image src={underline} alt="underline" />
             </span>
@@ -29,13 +29,13 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="services__content">
-        {services().map((service, i) => (
-          <ServicesCard service={service} key={i} />
+      <div className="services__content work__content">
+        {work().map((work, i) => (
+          <WorkCard work={work} key={i} />
         ))}
       </div>
     </section>
   );
 };
 
-export default Services;
+export default Work;

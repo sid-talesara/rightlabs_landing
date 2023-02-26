@@ -1,0 +1,25 @@
+.cta {
+  background-color: $color-blue-1;
+  color: $color-white_1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__content {
+    h3 {
+      font-size: 3.2rem;
+      font-family: Unbounded, sans-serif;
+    }
+
+    p {
+      font-size: 1.7rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,45 @@
+.testimonial__card {
+  width: calc(100% / 3.2);
+  padding: 3rem;
+  background-color: $color-white_1;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  &--content {
+    h3 {
+      font-size: 1.8rem;
+      color: $color-black;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #808080;
+      font-weight: 400;
+      line-height: 130%;
+      margin-top: 1.5rem;
+    }
+  }
+
+  &--cus {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .image {
+      height: 6rem;
+      width: 6rem;
+      border-radius: 100%;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  @include respond(phone-med) {
+    width: 100%;
+  }
+}
