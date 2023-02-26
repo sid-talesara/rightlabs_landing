@@ -7,7 +7,16 @@ const Cta = () => {
       </div>
 
       <div className="cta__btn">
-        <button className="btn btn--pri btn--pri--body">Let's Chat</button>
+        <button
+          className="btn btn--pri btn--pri--body"
+          data-tally-open="wvMPP4"
+          data-tally-layout="modal"
+          data-tally-width="500"
+          data-tally-emoji-text="👋"
+          data-tally-emoji-animation="wave"
+        >
+          Let's Chat
+        </button>
       </div>
     </section>
   );

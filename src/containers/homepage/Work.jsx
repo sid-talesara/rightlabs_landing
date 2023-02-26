@@ -25,7 +25,16 @@ const Work = () => {
         </div>
 
         <div className="services__top--btnWrap">
-          <button className="btn btn--pri btn--pri--body">Contact Now</button>
+          <button
+            className="btn btn--pri btn--pri--body"
+            data-tally-open="wvMPP4"
+            data-tally-layout="modal"
+            data-tally-width="500"
+            data-tally-emoji-text="👋"
+            data-tally-emoji-animation="wave"
+          >
+            Contact Now
+          </button>
         </div>
       </div>
 

@@ -11,7 +11,16 @@ const Nav = ({ sideNav, setSideNav }) => {
       </div>
       <div className="nav__menu">
         <ul className="nav__menu--menuList">
-          <li className="nav--cta">Connect With Us</li>
+          <li
+            className="nav--cta"
+            data-tally-open="wvMPP4"
+            data-tally-layout="modal"
+            data-tally-width="500"
+            data-tally-emoji-text="👋"
+            data-tally-emoji-animation="wave"
+          >
+            Connect With Us
+          </li>
           {/* <li className="hamburger" onClick={() => setSideNav(true)}>
             <Image src={hamburger} alt="hamburger-icon" />
           </li> */}
@@ -29,7 +38,9 @@ const Nav = ({ sideNav, setSideNav }) => {
             <li>Projects</li>
             <li>About Us</li>
             <li>
-              <button className="btn btn--nav--pri">Start a Project</button>
+              <a href="https://tally.so#tally-open=wvMPP4&tally-layout=modal&tally-width=650&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=1000">
+                <button className="btn btn--nav--pri">Start a Project</button>
+              </a>
             </li>
           </ul>
         </div>
