@@ -50,7 +50,15 @@ const Nav = ({ sideNav, setSideNav }) => {
               </a>
             </li>
             <li>
-              <a href="https://tally.so#tally-open=wvMPP4&tally-layout=modal&tally-width=650&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=1000">
+              <a
+                // href="#"
+                className="nav--cta"
+                data-tally-open="wvMPP4"
+                data-tally-layout="modal"
+                data-tally-width="500"
+                data-tally-emoji-text="👋"
+                data-tally-emoji-animation="wave"
+              >
                 <button className="btn btn--nav--pri">Start a Project</button>
               </a>
             </li>
