@@ -50,13 +50,13 @@ export default function Home() {
           <Nav sideNav={sideNav} setSideNav={setSideNav} />
         </div>
         <Header setSideNav={setSideNav} />
-        <div className="services__wrapper">
+        <div className="services__wrapper" id="services">
           <Services />
         </div>
         <div className="work__wrapper" id="work">
           <Work />
         </div>
-        <div className="testimonial__wrapper">
+        <div className="testimonial__wrapper" id="testimonial">
           <Testimonial />
         </div>
         <Cta />

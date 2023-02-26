@@ -21,9 +21,9 @@ const Nav = ({ sideNav, setSideNav }) => {
           >
             Connect With Us
           </li>
-          {/* <li className="hamburger" onClick={() => setSideNav(true)}>
+          <li className="hamburger" onClick={() => setSideNav(true)}>
             <Image src={hamburger} alt="hamburger-icon" />
-          </li> */}
+          </li>
         </ul>
 
         {/* Side menu in navigation */}
@@ -34,9 +34,21 @@ const Nav = ({ sideNav, setSideNav }) => {
             <Image src={close} alt="close-icon" />
           </div>
           <ul>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>About Us</li>
+            <li>
+              <a href="#services" onClick={() => setSideNav(false)}>
+                Our Services
+              </a>
+            </li>
+            <li>
+              <a href="#work" onClick={() => setSideNav(false)}>
+                Our Work
+              </a>
+            </li>
+            <li>
+              <a href="#testimonial" onClick={() => setSideNav(false)}>
+                Client Reviews
+              </a>
+            </li>
             <li>
               <a href="https://tally.so#tally-open=wvMPP4&tally-layout=modal&tally-width=650&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=1000">
                 <button className="btn btn--nav--pri">Start a Project</button>

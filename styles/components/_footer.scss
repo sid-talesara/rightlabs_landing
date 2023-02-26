@@ -26,6 +26,7 @@
     }
 
     .contact {
+      text-align: right;
       .heading {
         font-size: 2rem;
       }
@@ -37,7 +38,7 @@
           flex-direction: column;
           gap: 1rem;
           margin-top: 1.5rem;
-
+          align-items: flex-end;
           li {
             display: flex;
             align-items: center;
