@@ -4,6 +4,10 @@
   background-color: $color-primary;
   position: relative;
 
+  @media screen and (max-height: 650px) {
+    height: calc(var(--height) + 12rem);
+  }
+
   &__box {
     position: absolute;
     left: 50%;
