@@ -74,7 +74,7 @@
 
     // ! Side nav menu
     &--sideNav {
-      background-color: $color-sec;
+      background-color: $color-primary;
       position: absolute;
       top: 0;
       height: 100vh;
@@ -91,7 +91,7 @@
       ul {
         display: flex;
         flex-direction: column;
-        color: $color-black;
+        color: $color-sec;
         list-style: none;
         padding: 3rem;
         gap: 6rem;
@@ -101,7 +101,8 @@
           font-size: 2rem;
 
           a {
-            color: $color-black;
+            color: $color-sec;
+            border: 0 !important;
           }
         }
       }
@@ -148,8 +149,8 @@
         height: 4rem;
 
         img {
-          filter: invert(26%) sepia(74%) saturate(1517%) hue-rotate(191deg)
-            brightness(91%) contrast(99%);
+          filter: invert(97%) sepia(97%) saturate(4262%) hue-rotate(337deg)
+            brightness(104%) contrast(87%);
           height: 100%;
           width: 100%;
         }

@@ -59,7 +59,7 @@ const Nav = ({ sideNav, setSideNav }) => {
                 data-tally-emoji-text="👋"
                 data-tally-emoji-animation="wave"
               >
-                <button className="btn btn--nav--pri">Start a Project</button>
+                <button className="btn btn--nav--sec">Start a Project</button>
               </a>
             </li>
           </ul>

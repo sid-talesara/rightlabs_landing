@@ -6,12 +6,17 @@
   transition: all 0.4s ease-in-out;
 }
 
-.btn--nav--pri {
+.btn--nav--pri,
+.btn--nav--sec {
   background-color: $color-primary;
   padding: 1.5rem 3rem;
   border-radius: 20rem;
   font-size: 2rem;
   color: $color-white_1;
+}
+.btn--nav--sec {
+  background-color: $color-sec;
+  color: $color-blue-1;
 }
 
 .btn--pri {
