@@ -1,5 +1,6 @@
 .header {
-  height: 100vh;
+  // height: 100vh;
+  height: var(--height);
   background-color: $color-primary;
   position: relative;
 

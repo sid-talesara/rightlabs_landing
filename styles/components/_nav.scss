@@ -130,11 +130,11 @@
 
 .nav--scrolled {
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
-  background-color: $color-sec;
+  background-color: $color-primary;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 
   .nav {
-    color: $color-primary;
+    color: $color-sec;
     padding: 1rem 0;
     &__menu {
       &--menuList {
@@ -142,7 +142,7 @@
         align-items: center;
       }
       .nav--cta {
-        border: 2px solid $color-primary;
+        border: 2px solid $color-sec;
       }
       .hamburger {
         height: 4rem;
