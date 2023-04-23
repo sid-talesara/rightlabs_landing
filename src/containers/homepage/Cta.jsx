@@ -1,9 +1,16 @@
+import Image from "next/image";
+import underline from "../../../public/assets/images/line2-white.svg";
 const Cta = () => {
   return (
     <section className="cta">
       <div className="cta__content">
-        <h3>Let’s get in touch</h3>
-        <p>We always love to talk to different people and their ideas</p>
+        <h3>
+          Let’s talk about you🫵
+          <span className="underline">
+            <Image src={underline} alt="underline" />
+          </span>
+        </h3>
+        <p>Please get in touch here to discuss how we can help</p>
       </div>
 
       <div className="cta__btn">

@@ -1,8 +1,8 @@
 import Image from "next/image";
-
-import icon_email from "../../public/assets/icons/icon_email.svg";
-import icon_location from "../../public/assets/icons/icon_location.svg";
-import icon_phone from "../../public/assets/icons/icon_phone.svg";
+import Link from "next/link";
+import { AiOutlineMail } from "react-icons/ai";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { BsTelephone } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -21,22 +21,26 @@ const Footer = () => {
           <div className="list">
             <ul>
               <li>
-                <span className="icon">
-                  <Image src={icon_email} />
-                </span>
-                <span className="text">connect@rightlabs.co</span>
+                <AiOutlineMail className="icon" />
+                <a className="text" href="mailto: connect@rightlabs.co">
+                  connect@rightlabs.co
+                </a>
               </li>
               <li>
-                <span className="icon">
-                  <Image src={icon_phone} />
-                </span>
-                <span className="text">(+91) 8875562170</span>
+                <BsTelephone className="icon" />
+                <a className="text" href="tel: 917073232505">
+                  (+91) 8875562170
+                </a>
               </li>
               <li>
-                <span className="icon">
-                  <Image src={icon_location} />
-                </span>
-                <span className="text">5A-501 MVL Coral</span>
+                <HiOutlineLocationMarker className="icon" />
+                <a
+                  className="text"
+                  href="https://goo.gl/maps/iBed9z1uiftju58b8"
+                  target="_blank"
+                >
+                  5A-501 MVL Coral
+                </a>
               </li>
             </ul>
           </div>
@@ -44,8 +48,10 @@ const Footer = () => {
       </div>
 
       <div className="footer__bottom">
-        <p className="copyright">Copyright &#169; 2023 Rightlabs</p>
-        <p className="right">All Rights Reserved </p>
+        {/* <p className="copyright">Copyright &#169; 2023 Rightlabs</p> */}
+        <p className="right">
+          Copyright &#169; 2023 Rightlabs | All Rights Reserved{" "}
+        </p>
       </div>
     </div>
   );
