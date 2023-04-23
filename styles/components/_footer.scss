@@ -89,5 +89,14 @@
   @include respond(phone) {
     padding-left: 2rem;
     padding-right: 2rem;
+
+    .list {
+      ul {
+        flex-direction: column;
+      }
+    }
+    &__bottom {
+      justify-content: center;
+    }
   }
 }
