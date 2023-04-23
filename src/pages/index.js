@@ -39,10 +39,7 @@ export default function Home() {
           property="og:description"
           content="Ready to take your business to the next level? Let's work together to create digital solutions that work for you."
         />
-        {/* <meta
-          property="og:image"
-          content="http://content.drisk.io/misc/markup_prediction.png"
-        /> */}
+        <meta property="og:image" content="https://i.imgur.com/Wa8NvYF.png" />
       </Head>
 
       <main>
