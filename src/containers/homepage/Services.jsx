@@ -5,7 +5,16 @@ import services from "../../data/services.js";
 import underline from "../../../public/assets/images/sec_underLine.svg";
 import ServicesCard from "@/components/ServicesCard";
 
+import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 const Services = () => {
+  const [width, setWidth] = useState(0);
+  const carousal = useRef();
+  useEffect(() => {
+    console.log(carousal.current.scrollWidth, carousal.current.offsetWidth);
+    setWidth(carousal.current.scrollWidth - carousal.current.offsetWidth);
+  }, []);
+
   return (
     <section className="services row">
       <div className="services__top">
@@ -29,11 +38,23 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="services__content">
-        {services().map((service, i) => (
-          <ServicesCard service={service} key={i} />
-        ))}
-      </div>
+      <motion.div
+        ref={carousal}
+        className="services__carousal"
+        whileTap={{ cursor: "grabbing " }}
+      >
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className="inner-carousal"
+        >
+          {services().map((service, i) => (
+            <motion.div>
+              <ServicesCard service={service} key={i} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

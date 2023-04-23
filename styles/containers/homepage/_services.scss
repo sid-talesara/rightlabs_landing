@@ -43,11 +43,15 @@
     }
   }
 
-  &__content {
-    display: flex;
-    flex-wrap: wrap;
+  &__carousal {
+    overflow: hidden;
+    cursor: grab;
     gap: 3rem;
     justify-content: space-between;
+  }
+
+  .inner-carousal {
+    display: flex;
   }
 
   @include respond(phone) {

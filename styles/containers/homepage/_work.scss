@@ -13,4 +13,11 @@
       }
     }
   }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 3rem;
+    justify-content: space-between;
+  }
 }
